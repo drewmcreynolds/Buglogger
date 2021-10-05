@@ -43,12 +43,18 @@
             </div>
             <div v-else>
               <div v-if="trackedCheck">
-                <button @click="deleteTrackedBug(account.id)" type="button" class="text-white bg-danger fs-5 rounded-pill border border-success p-3 m-3">
+                <button @click="deleteTrackedBug(account.id)"
+                        type="button"
+                        class="text-white bg-danger fs-5 rounded-pill border border-success p-3 m-3"
+                >
                   Stop Track
                 </button>
               </div>
               <div v-else>
-                <button @click="createTrackedBug(currentBug.id)" type="button" class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3">
+                <button @click="createTrackedBug(currentBug.id)"
+                        fs-3type="button"
+                        class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3"
+                >
                   Track Bug
                 </button>
               </div>
@@ -69,10 +75,19 @@
               </p>
             </div>
             <div v-else>
-              <button v-if="account.id === currentBug.creatorId" @click="closeBug(currentBug.id)" type="button" class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3">
+              <button v-if="account.id === currentBug.creatorId"
+                      @click="closeBug(currentBug.id)"
+                      type="button"
+                      class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3"
+              >
                 <b>Close bug</b>
               </button>
-              <button v-if="account.id === currentBug.creatorId" type="button" class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3" data-bs-toggle="modal" data-bs-target="#edit-form">
+              <button v-if="account.id === currentBug.creatorId"
+                      type="button"
+                      class="text-success bg-black fs-5 rounded-pill border border-success p-3 m-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#edit-form"
+              >
                 <b>Edit Bug</b>
               </button>
             </div>

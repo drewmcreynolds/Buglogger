@@ -10,10 +10,18 @@
           <button class="text-success bg-black rounded-pill p-3 mt-3 border border-success fs-3" @click="unsortBugs()">
             Most Recent
           </button>
-          <button v-if="sorted === false" type="button" class="text-success bg-black rounded-pill p-3 mt-3 border border-success fs-3" @click="sortBugs()">
+          <button v-if="sorted === false"
+                  type="button"
+                  class="text-success bg-black rounded-pill p-3 mt-3 border border-success fs-3"
+                  @click="sortBugs()"
+          >
             Sort by Priority
           </button>
-          <button v-if="sorted === true" type="button" class="text-black bg-success rounded-pill p-3 border border-success fs-3" @click="toggleAscending()">
+          <button v-if="sorted === true"
+                  type="button"
+                  class="text-black bg-success rounded-pill p-3 border border-success fs-3"
+                  @click="toggleAscending()"
+          >
             Sort by Priority
           </button>
         </div>

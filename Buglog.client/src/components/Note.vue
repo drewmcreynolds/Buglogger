@@ -8,7 +8,9 @@
     </div>
     <div class="col-md-1 p-3">
       <div v-if="account.id === note.creatorId">
-        <i class="mdi mdi-delete-circle mdi-48px text-warning selectable justify-content flex-end" @click="deleteNote(note.id)"></i>
+        <i class="mdi mdi-delete-circle mdi-48px text-warning selectable justify-content flex-end"
+           @click="deleteNote(note.id)"
+        ></i>
       </div>
     </div>
   </div>
